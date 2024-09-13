@@ -61,7 +61,25 @@ To create the necessary database tables and seed initial data, follow these step
 
 The project structure is organized as follows:
 
-todo-api/ │ ├── src/ │ ├── controllers/ # Contains the API controllers (Auth, Todo) │ ├── database/ # Sequelize configurations, migrations, models, seeders │ │ ├── config/ # Configuration for database connection │ │ ├── migrations/ # Database migrations │ │ ├── models/ # Sequelize models for 'users' and 'todos' │ │ ├── seeders/ # Seeder files for populating initial data │ ├── middleware/ # Middleware for authentication, error handling, etc. │ ├── routes/ # API routes (authRoutes, todoRoutes) │ ├── services/ # Services for handling business logic │ └── utils/ # Utility files, like database connection │ ├── .sequelizerc # Sequelize CLI configuration for custom paths ├── app.js # Main entry point of the application ├── package.json # Project dependencies and scripts ├── README.md # Project documentation └── .env # Environment variables (not included in repo)
+todo-api/
+│
+├── src/
+│   ├── controllers/            # Contains the API controllers (Auth, Todo)
+│   ├── database/               # Sequelize configurations, migrations, models, seeders
+│   │   ├── config/             # Configuration for database connection
+│   │   ├── migrations/         # Database migrations
+│   │   ├── models/             # Sequelize models for 'users' and 'todos'
+│   │   ├── seeders/            # Seeder files for populating initial data
+│   ├── middleware/             # Middleware for authentication, error handling, etc.
+│   ├── routes/                 # API routes (authRoutes, todoRoutes)
+│   ├── services/               # Services for handling business logic
+│   └── utils/                  # Utility files, like database connection
+│
+├── .sequelizerc                # Sequelize CLI configuration for custom paths
+├── app.js                      # Main entry point of the application
+├── package.json                # Project dependencies and scripts
+├── README.md                   # Project documentation
+└── .env                        # Environment variables (not included in repo)
 
 
 ## 5. API Endpoints and Methods

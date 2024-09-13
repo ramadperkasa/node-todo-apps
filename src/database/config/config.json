@@ -1,0 +1,28 @@
+{
+  "development": {
+    "username": "root",
+    "password": "root",
+    "database": "todo-apps",
+    "host": "127.0.0.1",
+    "port": "3300",
+    "dialect": "mysql",
+    "migrationStorage": "json",
+    "migrationStoragePath": "src/database/migrations/migration-meta.json",
+    "seederStorage": "json",
+    "seederStoragePath": "src/database/seeders/seeder-meta.json"
+  },
+  "test": {
+    "username": "root",
+    "password": "root",
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "root",
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

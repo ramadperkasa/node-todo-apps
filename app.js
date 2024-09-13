@@ -4,6 +4,10 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const morgan = require("morgan");
 
+require("dotenv").config();
+
+const cors = require("cors");
+
 const routes = require("./src/routes/index");
 
 const responseHandler = require("./src/middleware/responseHandler");
@@ -12,6 +16,12 @@ const app = express();
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
+
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+  })
+);
 
 app.use(morgan("dev"));
 app.use(express.json());
@@ -35,7 +45,7 @@ app.use((err, req, res, next) => {
   });
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);

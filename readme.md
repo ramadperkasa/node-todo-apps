@@ -61,6 +61,7 @@ To create the necessary database tables and seed initial data, follow these step
 
 The project structure is organized as follows:
 
+```
 todo-api/
 │
 ├── src/
@@ -80,6 +81,7 @@ todo-api/
 ├── package.json                # Project dependencies and scripts
 ├── README.md                   # Project documentation
 └── .env                        # Environment variables (not included in repo)
+```
 
 
 ## 5. API Endpoints and Methods
